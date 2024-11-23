@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <!--Ponemos CLASS para poder usar la hoja de estilo -->
+    <header class = "header">
+
+        <div class="menu container">
+            <a href="index.html" class="logo">Multipulseras</a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="images/menu.png" class="menu-icono" alt="menu">
+            </label>
+        
+            <!-- Navegación -->
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Tienda</a></li>
+                    <li><a href="HTML/signup.html">Cuenta</a></li>
+                </ul>
+            </nav>
+        
+            <!-- Íconos de Usuario y Carrito -->
+            <div class="header-icons">
+                <!-- Icono de cuenta -->
+                <a href="HTML/login.html">
+                    <img src="images/usuario.png" alt="Cuenta" class="header-icon">
+                </a>
+        
+                <!-- Icono del carrito -->
+                <div class="submenu">
+                    <img src="images/car.svg" id="img-carrito" alt="Car Shop" class="header-icon">
+                    <div id="carrito">
+                        <table id="lista-carrito">
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                        <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Creamos un div (apartado) para la imagen principal y contenido del header-->
+        <div class = "header-content container">
+            <div class = "header">
+                <img src="images/right.png" alt = "">
+            </div>
+            <div class = "header-txt">
+                <!--h1 Indica que es el titulo principal de esta parte -->
+                <h1>Ofertas Especiales</h1>
+                <!--PARRAFO QUE VA A TENER LA DESCRIPCION-->
+                <p>Estrenas los mejors accesorios</p>  
+                <a href="#" class = "btn-1">Información</a>    
+            </div>
+        </div>
+    </header>
+
+    <section class = "ofert container">     
+
+        <div class = "ofert-1"></div>
+            <div class = "ofert-img">
+                <img src="images/f1.jpg" alt = "">
+            </div>
+            <div class = "ofert-txt">
+                <h3>Pulsera de colores</h3>
+                <a href = "#" class = "btn-2"> Información</a>
+            </div>
+        </div>
+
+        <div class = "ofert-1"></div>
+            <div class = "ofert-img">
+                <img src="images/f2.jpg" alt = "">
+            </div>
+            <div class = "ofert-txt">
+                <h3>Pulsera sencilla</h3>
+                <a href = "#" class = "btn-2"> Información</a>
+            </div>
+        </div>
+
+        <div class = "ofert-1"></div>
+            <div class = "ofert-img">
+                <img src="images/f3.jpg" alt = "">
+            </div>
+            <div class = "ofert-txt">
+                <h3>Pulsera roja con inicial</h3>
+                <a href = "#" class = "btn-2"> Información</a>
+            </div>
+        </div>
+    </section>
+
+    <!--PRODUCTOS DE CONTENIDO PRINCIPAL AQUI-->
+    <main class="products container" id = "lista-1">
+        <h2>Productos</h2>
+        <div class="product-content" id="product-container">
+            <!-- Los productos se generarán aquí dinámicamente por javaScript-->
+        </div>
+    </main>
+
+    
+
+    <!--SECCION PARA BLOG -->
+    <section class = "blog container">
+        <div class = "blog-1">
+            <img src="images/logo.webp" alt="">
+            
+            <div>
+                <h3>Sobre Nuestra Empresa</h3>
+                <p> 
+                    En Multipulseras nos especializamos en transformar hilos en obras de arte únicas. Desde nuestros inicios, 
+                    hemos tenido como objetivo ofrecer productos de alta calidad a precios accesibles, destacándonos por nuestro compromiso con la artesanía y el diseño personalizado. 
+                    Cada una de nuestras pulseras es elaborada a mano con dedicación y un toque especial, asegurando que cada cliente reciba algo tan único como su estilo.</p>
+            </div>
+            
+        </div>
+
+
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="contact-info">
+                <h3>Contactos</h3>
+                <ul>
+                    <li><a href="mailto:multipulseras@hotmail.com"><i class="fas fa-envelope"></i> multipulseras@hotmail.com</a></li>
+                    <li><a href="https://www.instagram.com/multipulseras_ec" target="_blank"><i class="fab fa-instagram"></i> Multipulseras_ec</a></li>
+                    <li><a href="https://www.facebook.com/multipulseras_ec" target="_blank"><i class="fab fa-facebook"></i> Multipulseras_ec</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src = "JS/script.js"> </script>
+</body>
+</html>
